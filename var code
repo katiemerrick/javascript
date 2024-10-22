@@ -1,0 +1,23 @@
+var UNIT_PRICE = 11;
+var TAX_RATE = 0.08;
+var SHIPPING_COST= 4;
+
+function getUnitprice (){ 
+  return UNIT_PRICE;
+}
+
+function getTaxes (){
+  return UNIT_PRICE*TAX_RATE;
+}
+
+function getShipping() {
+  return SHIPPING_COST;
+}
+
+function getTotalcost () {
+  return getUnitprice () + getTaxes () + getShipping ();
+}
+
+var totalCost = getTotalcost ()
+
+console.log(totalCost)
